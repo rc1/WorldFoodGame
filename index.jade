@@ -2,13 +2,17 @@ doctype html
 html(lang="en")
     head
         link( rel='stylesheet', type='text/css', href='/css/style.css' )
+        //- link( rel='stylesheet', type='text/css', href='/js/libs/leaflet/leaflet.css' )
+        link( rel='stylesheet', type='text/css', href='http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css' )
         script( src='/watch.js' )
     body
-        h1 hello world
+        #map
 
         //- Libraries
         script( src='/js/libs/jquery-2.1.0.min.js' )
         script( src='/js/libs/W/build/W.js' )
+        script( src='http://libs.cartocdn.com/cartodb.js/v3/cartodb.js' )
+        //- script( src='/js/libs/leaflet/leaflet.js' )
 
         //- Main
-        script( src='main.js' )
+        script( src='js/main.js' )
